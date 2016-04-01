@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Zhouyuan's Homepage
 locale:           en_US
-url:
+url:              //slowbull.github.ioi
 
 
 # Jekyll configuration
