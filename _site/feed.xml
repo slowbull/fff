@@ -1,16 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Zhouyuan's Homepage</title>
+<title type="text">Homepage</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="//slowbull.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="//slowbull.github.io" />
-<updated>2016-04-01T02:02:55-05:00</updated>
+<updated>2016-04-01T02:18:30-05:00</updated>
 <id>//slowbull.github.io/</id>
 <author>
   <name>Zhouyuan(Jonny) Huo</name>
   <uri>//slowbull.github.io/</uri>
   
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Learning Rate or descent step in Stochastic Gradient Descent.]]></title>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/SGD_learning_rate/" />
+  <id>//slowbull.github.io/SGD_learning_rate</id>
+  <published>2016-04-01T00:00:00-05:00</published>
+  <updated>2016-04-01T00:00:00-05:00</updated>
+  <author>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Why do we use stochastic gradient descent algorithm:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Traditional Gradient Descent
+cons: (1). Time consuming to compute n gradients in one iteration.
+(2). Easy to trap in local optimum.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stochastic Gradient Descent.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;(1). Can avoid local optimum.
+(2). Able to solve scalable data.&lt;/p&gt;
+
+&lt;p&gt;Tricks in choice of learning rate and updating.
+a. Experiment with the learning rate $latex \gamma_0 &amp;amp;s=2$ using a small sample of the training set.&lt;/p&gt;
+
+&lt;p&gt;b. Step decay. $latex \gamma_{t+1} = \gamma_t - step &amp;amp;s=2$.&lt;/p&gt;
+
+&lt;p&gt;c. 1/t decay. $latex \gamma_t = \frac{\gamma_0}{1+\gamma_0 \lambda t}&amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;d. Exponential decay.  $latex \gamma_t = \gamma_0 e^{-kt}&amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;e. Momentum.
+Description:
+When updating the parameter, use the direction of w(t-1) at the last iteration.
+Ads:
+(1) Smooth out the variations, when using one data to update is too sensitive sometimes.
+(2) Speed up when direction are the same.
+Usage:
+$latex \Delta w(t) = \gamma_t g(t) + \alpha \Delta w(t-1)&amp;amp;s=2$  alpha is usually 0.9&lt;/p&gt;
+
+&lt;p&gt;$latex w(t+1) = w(t) - \Delta w(t)&amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;f.  Adaptive learning rate. AdaGrad.
+Description:
+It provides a specific learning rate for each parameter.
+Usage:&lt;/p&gt;
+
+&lt;p&gt;$latex \gamma_{i,t} =\frac{\gamma_0}{ \sqrt{\sum_{\hat{t} = 1}^t g_{\hat{t},i}^2}} &amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;d. RMSprop.
+Description:
+It keeps running average of its recent gradient magnitudes and divides the next gradient by this average, so that loosely gradient values are normalized.
+Usages:
+$latex MS(w,t) = 0.9 MS(w,t-1) + 0.1 g_t^2 &amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;$latex \Delta w(t) =\frac{ \gamma g_t }{MS(w,t)+u} &amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;$latex w(t+1) = w(t) - \Delta w(t) &amp;amp;s=2$&lt;/p&gt;
+
+&lt;p&gt;e. Combine RMSprop and momentum trick.&lt;/p&gt;
+
+&lt;p&gt;Reference:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bottou, Léon. “Stochastic gradient descent tricks.” Neural Networks: Tricks of the Trade. Springer Berlin Heidelberg, 2012. 421-436.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;http://www.willamette.edu/~gorr/classes/cs449/momrate.html&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Toronto CSC321 Lecture notes. http://www.cs.toronto.edu/~tijmen/csc321/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stanford CS231 Lecture notes. http://cs231n.stanford.edu/&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/SGD_learning_rate/&quot;&gt;Learning Rate or descent step in Stochastic Gradient Descent.&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Homepage&lt;/a&gt; on April 01, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
@@ -27,7 +116,7 @@
   <content type="html">
     &lt;p&gt;Hello world, Happy Fool’s day !&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/Hello/&quot;&gt;Hello world&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on April 01, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/Hello/&quot;&gt;Hello world&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Homepage&lt;/a&gt; on April 01, 2016.&lt;/p&gt;
   </content>
 </entry>
 

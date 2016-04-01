@@ -5,14 +5,18 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Page Not Found &#8211; Homepage</title>
-<meta name="description" content="Page not found. Your pixels are in another canvas.">
-<meta name="keywords" content="">
+<title>Learning Rate or descent step in Stochastic Gradient Descent. &#8211; Homepage</title>
+<meta name="description" content="Why do we use stochastic gradient descent algorithm:
+
+">
+<meta name="keywords" content="Deep Learning">
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Page Not Found">
-<meta name="twitter:description" content="Page not found. Your pixels are in another canvas.">
+<meta name="twitter:title" content="Learning Rate or descent step in Stochastic Gradient Descent.">
+<meta name="twitter:description" content="Why do we use stochastic gradient descent algorithm:
+
+">
 
 
 
@@ -22,9 +26,11 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Page Not Found">
-<meta property="og:description" content="Page not found. Your pixels are in another canvas.">
-<meta property="og:url" content="//slowbull.github.io/404.html">
+<meta property="og:title" content="Learning Rate or descent step in Stochastic Gradient Descent.">
+<meta property="og:description" content="Why do we use stochastic gradient descent algorithm:
+
+">
+<meta property="og:url" content="//slowbull.github.io/SGD_learning_rate/">
 <meta property="og:site_name" content="Homepage">
 
 <meta property="og:image" content="//slowbull.github.io/images/default-thumb.png">
@@ -34,7 +40,7 @@
 
 
 
-<link rel="canonical" href="//slowbull.github.io/404.html">
+<link rel="canonical" href="//slowbull.github.io/SGD_learning_rate/">
 <link href="//slowbull.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Homepage Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -74,7 +80,7 @@
 
 </head>
 
-<body class="page">
+<body class="post">
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
@@ -138,43 +144,120 @@
 </div>
 
   </div>
-  <article class="page">
-    <h1>Page Not Found</h1>
-    <div class="article-wrap">
-      <p>Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it below.</p>
-
-<script type="text/javascript">
-  var GOOG_FIXURL_LANG = 'en';
-  var GOOG_FIXURL_SITE = '//slowbull.github.io'
-</script>
-
-<script type="text/javascript" src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
-</script>
-
-
+  <article class="post">
+    <div class="headline-wrap">
       
-        <hr />
+        <h1><a href="//slowbull.github.io/SGD_learning_rate/" rel="bookmark" title="Learning Rate or descent step in Stochastic Gradient Descent.">Learning Rate or descent step in Stochastic Gradient Descent.</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>Why do we use stochastic gradient descent algorithm:</p>
+
+<ol>
+  <li>
+    <p>Traditional Gradient Descent
+cons: (1). Time consuming to compute n gradients in one iteration.
+(2). Easy to trap in local optimum.</p>
+  </li>
+  <li>
+    <p>Stochastic Gradient Descent.</p>
+  </li>
+</ol>
+
+<p>(1). Can avoid local optimum.
+(2). Able to solve scalable data.</p>
+
+<p>Tricks in choice of learning rate and updating.
+a. Experiment with the learning rate $latex \gamma_0 &amp;s=2$ using a small sample of the training set.</p>
+
+<p>b. Step decay. $latex \gamma_{t+1} = \gamma_t - step &amp;s=2$.</p>
+
+<p>c. 1/t decay. $latex \gamma_t = \frac{\gamma_0}{1+\gamma_0 \lambda t}&amp;s=2$</p>
+
+<p>d. Exponential decay.  $latex \gamma_t = \gamma_0 e^{-kt}&amp;s=2$</p>
+
+<p>e. Momentum.
+Description:
+When updating the parameter, use the direction of w(t-1) at the last iteration.
+Ads:
+(1) Smooth out the variations, when using one data to update is too sensitive sometimes.
+(2) Speed up when direction are the same.
+Usage:
+$latex \Delta w(t) = \gamma_t g(t) + \alpha \Delta w(t-1)&amp;s=2$  alpha is usually 0.9</p>
+
+<p>$latex w(t+1) = w(t) - \Delta w(t)&amp;s=2$</p>
+
+<p>f.  Adaptive learning rate. AdaGrad.
+Description:
+It provides a specific learning rate for each parameter.
+Usage:</p>
+
+<p>$latex \gamma_{i,t} =\frac{\gamma_0}{ \sqrt{\sum_{\hat{t} = 1}^t g_{\hat{t},i}^2}} &amp;s=2$</p>
+
+<p>d. RMSprop.
+Description:
+It keeps running average of its recent gradient magnitudes and divides the next gradient by this average, so that loosely gradient values are normalized.
+Usages:
+$latex MS(w,t) = 0.9 MS(w,t-1) + 0.1 g_t^2 &amp;s=2$</p>
+
+<p>$latex \Delta w(t) =\frac{ \gamma g_t }{MS(w,t)+u} &amp;s=2$</p>
+
+<p>$latex w(t+1) = w(t) - \Delta w(t) &amp;s=2$</p>
+
+<p>e. Combine RMSprop and momentum trick.</p>
+
+<p>Reference:</p>
+
+<ol>
+  <li>
+    <p>Bottou, Léon. “Stochastic gradient descent tricks.” Neural Networks: Tricks of the Trade. Springer Berlin Heidelberg, 2012. 421-436.</p>
+  </li>
+  <li>
+    <p>http://www.willamette.edu/~gorr/classes/cs449/momrate.html</p>
+  </li>
+  <li>
+    <p>Toronto CSC321 Lecture notes. http://www.cs.toronto.edu/~tijmen/csc321/</p>
+  </li>
+  <li>
+    <p>Stanford CS231 Lecture notes. http://cs231n.stanford.edu/</p>
+  </li>
+</ol>
+
+      <hr />
+      <footer role="contentinfo">
         <div class="social-share">
   <h4>Share on</h4>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=//slowbull.github.io/404.html" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=//slowbull.github.io/SGD_learning_rate/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=//slowbull.github.io/404.html" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=//slowbull.github.io/SGD_learning_rate/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=//slowbull.github.io/404.html" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=//slowbull.github.io/SGD_learning_rate/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
   </ul>
 </div><!-- /.social-share -->
-      
+        <p class="byline"><strong>Learning Rate or descent step in Stochastic Gradient Descent.</strong> was published on <time datetime="2016-04-01T00:00:00-05:00">April 01, 2016</time>.</p>
+      </footer>
     </div><!-- /.article-wrap -->
-    
+  
   </article>
-</div><!-- /#index -->
+</div><!-- /#main -->
 
 <div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="//slowbull.github.io/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="//slowbull.github.io/Hello/" title="Hello world">Hello world</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
   <footer>
     
 
