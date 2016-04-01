@@ -41,9 +41,9 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
+  name: Zhouyuan(Jonny) Huo
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Machine learner."
   email:
   disqus-shortname:
   twitter: #username
