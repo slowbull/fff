@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Site Title</title>
+<title type="text">Zhouyuan's Homepage</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2016-04-01T00:22:04-05:00</updated>
-<id>/</id>
+<link rel="self" type="application/atom+xml" href="//slowbull.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="//slowbull.github.io" />
+<updated>2016-04-01T01:45:39-05:00</updated>
+<id>//slowbull.github.io/</id>
 <author>
-  <name>Your Name</name>
-  <uri>/</uri>
+  <name>Zhouyuan(Jonny) Huo</name>
+  <uri>//slowbull.github.io/</uri>
   
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Author Override]]></title>
-  <link rel="alternate" type="text/html" href="/author-override/" />
-  <id>/author-override</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/author-override/" />
+  <id>//slowbull.github.io/author-override</id>
   <published>2014-07-31T00:00:00-05:00</published>
   <updated>2014-07-31T00:00:00-05:00</updated>
   <author>
     <name>Billy Rick</name>
-    <uri></uri>
+    <uri>//slowbull.github.io</uri>
     <email>billy@rick.com</email>
   </author>
   <content type="html">
@@ -57,21 +57,21 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;billy_rick&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;/author-override/&quot;&gt;Author Override&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on July 31, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/author-override/&quot;&gt;Author Override&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on July 31, 2014.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Syntax Highlighting Post]]></title>
-  <link rel="alternate" type="text/html" href="/code-highlighting-post/" />
-  <id>/code-highlighting-post</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/code-highlighting-post/" />
+  <id>//slowbull.github.io/code-highlighting-post</id>
   <updated>2016-02-01T00:00:00-00:00</updated>
   <published>2013-08-16T00:00:00-05:00</published>
   
   <author>
-    <name>Your Name</name>
-    <uri></uri>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
     
   </author>
   <content type="html">
@@ -184,20 +184,20 @@
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on August 16, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on August 16, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sample Link Post]]></title>
-  <link rel="alternate" type="text/html" href="/sample-link-post/" />
-  <id>/sample-link-post</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/sample-link-post/" />
+  <id>//slowbull.github.io/sample-link-post</id>
   <published>2013-08-12T00:00:00-05:00</published>
   <updated>2013-08-12T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
-    <uri></uri>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
     
   </author>
   <content type="html">
@@ -209,20 +209,20 @@
 
 &lt;p&gt;Some &lt;a href=&quot;http://www.mademistakes.com&quot;&gt;link&lt;/a&gt; can also be shown.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on August 12, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on August 12, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Post with Large Feature Image and Text]]></title>
-  <link rel="alternate" type="text/html" href="/readability-feature-post/" />
-  <id>/readability-feature-post</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/readability-feature-post/" />
+  <id>//slowbull.github.io/readability-feature-post</id>
   <published>2013-05-23T00:00:00-05:00</published>
   <updated>2013-05-23T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
-    <uri></uri>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
     
   </author>
   <content type="html">
@@ -275,20 +275,20 @@
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on May 23, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on May 23, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A Post with Images]]></title>
-  <link rel="alternate" type="text/html" href="/sample-post-images/" />
-  <id>/sample-post-images</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/sample-post-images/" />
+  <id>//slowbull.github.io/sample-post-images</id>
   <published>2013-05-22T00:00:00-05:00</published>
   <updated>2013-05-22T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
-    <uri></uri>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
     
   </author>
   <content type="html">
@@ -343,20 +343,20 @@
 	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on May 22, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on May 22, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Testing Readability with a Bunch of Text]]></title>
-  <link rel="alternate" type="text/html" href="/readability-post/" />
-  <id>/readability-post</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/readability-post/" />
+  <id>//slowbull.github.io/readability-post</id>
   <published>2012-05-22T00:00:00-05:00</published>
   <updated>2012-05-22T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
-    <uri></uri>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
     
   </author>
   <content type="html">
@@ -401,21 +401,21 @@
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on May 22, 2012.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on May 22, 2012.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sample Post]]></title>
-  <link rel="alternate" type="text/html" href="/sample-post/" />
-  <id>/sample-post</id>
+  <link rel="alternate" type="text/html" href="//slowbull.github.io/sample-post/" />
+  <id>//slowbull.github.io/sample-post</id>
   <updated>2013-05-31T00:00:00-00:00</updated>
   <published>2011-03-10T00:00:00-06:00</published>
   
   <author>
-    <name>Your Name</name>
-    <uri></uri>
+    <name>Zhouyuan(Jonny) Huo</name>
+    <uri>//slowbull.github.io</uri>
     
   </author>
   <content type="html">
@@ -479,7 +479,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p class=&quot;image-pull-right&quot;&gt;&lt;img src=&quot;/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;image-pull-right&quot;&gt;&lt;img src=&quot;//slowbull.github.io/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
@@ -581,7 +581,7 @@
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; You can also add notices by appending &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.notice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; to a paragraph.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//slowbull.github.io/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Zhouyuan(Jonny) Huo at &lt;a href=&quot;//slowbull.github.io&quot;&gt;Zhouyuan's Homepage&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
   </content>
 </entry>
 
